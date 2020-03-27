@@ -12,9 +12,9 @@ export class HeaderComponent implements OnInit {
 
   @Output() private charactersData = new EventEmitter<any[]>();
 
-  protected searchForm: FormGroup;
-  protected searchFor: string
-  protected characters: any[];
+  public searchForm: FormGroup;
+  public searchFor: string
+  public characters: any[];
 
   constructor(private marvelAPI: MarvelAPIService, private fb: FormBuilder) {}
 
@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  protected getCharacters(character: string = null): void {
+  public getCharacters(character: string = null): void {
     character ? this.searchForm.get('search').setValue(character) : null
     character ? this.searchFor = character : this.searchFor = this.searchForm.get("search").value;
 

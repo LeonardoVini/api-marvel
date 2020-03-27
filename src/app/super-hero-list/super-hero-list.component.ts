@@ -7,7 +7,7 @@ import { Component, Input, OnChanges, SimpleChanges, OnInit } from '@angular/cor
 })
 export class SuperHeroListComponent implements OnInit, OnChanges {
 
-  @Input() protected characters: any[];
+  @Input() public characters: any[];
 
   constructor() { }
 

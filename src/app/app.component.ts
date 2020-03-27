@@ -7,14 +7,14 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AppComponent implements OnInit {
 
-  protected characters: any[]
+  public characters: any[]
 
   constructor() {}
 
   ngOnInit(): void {
   }
 
-  protected setCharacters(event): void {
+  public setCharacters(event): void {
     this.characters = event
   }
 }

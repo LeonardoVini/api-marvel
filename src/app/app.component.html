@@ -5,7 +5,7 @@
     <super-hero-list [characters]="characters"></super-hero-list>
 
     <div class="no-heros" *ngIf="!characters?.length">
-      <div class="error-content" *ngIf="errorPage">
+      <!-- <div class="error-content" *ngIf="errorPage">
         <h3>
           There isn't a hero called <span>{{ searchFor }}</span
           >. Try one of these please:
@@ -23,7 +23,7 @@
             Captain America
           </li>
         </ul>
-      </div>
+      </div> -->
 
       <img src="../assets/stan-lee.jpg" alt="Stan Lee" />
 
