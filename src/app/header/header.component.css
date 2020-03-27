@@ -1,0 +1,82 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+}
+
+header h1 {
+  font-size: 48px;
+  font-style: italic;
+}
+
+header h1 span {
+  background: rgb(236, 29, 36);
+  padding: 0 5px;
+  color: white
+}
+
+#search-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+input[type=text] {
+  flex: 1;
+  height: 36px;
+  border-radius: 18px;
+  padding: 0 30px;
+  border-left: 7px solid rgb(236, 29, 36);
+  border-right: 7px solid rgb(236, 29, 36);
+
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#search-content button {
+  width: 70px;
+  height: 36px;
+  background: white;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  border-radius: 18px;
+  margin-left: 10px;
+}
+
+#search-content button:hover {
+  cursor: pointer;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #000000;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .05em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation:
+    typing 2.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 65% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(236, 29, 36) }
+}
+
+

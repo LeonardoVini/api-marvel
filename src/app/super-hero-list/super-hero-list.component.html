@@ -1,0 +1,8 @@
+<div *ngIf="characters?.length" class="character-wrapper">
+  <super-hero
+    class="character"
+    *ngFor="let character of characters; let i = index"
+    [character]="character"
+  >
+  </super-hero>
+</div>

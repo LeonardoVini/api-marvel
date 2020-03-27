@@ -1,0 +1,14 @@
+<header class="typewriter">
+  <h1>The <span>MARVEL</span> Comics API</h1>
+
+  <div id="search-content">
+    <form [formGroup]="searchForm" (ngSubmit)="getCharacters()">
+      <input
+        type="text"
+        placeholder="search for a hero..."
+        formControlName="search"
+      />
+      <button type="submit" [disabled]="searchForm.invalid">search</button>
+    </form>
+  </div>
+</header>
