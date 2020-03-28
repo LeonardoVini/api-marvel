@@ -50,7 +50,7 @@ export class LoginComponent implements OnInit, AfterViewInit {
     setInterval(() => {
       let hero: string = this.changeHeroImage();
 
-      this.hero.nativeElement.src = `../../assets/${hero}.png`;
+      this.hero.nativeElement.src = `./assets/${hero}.png`;
       this.hero.nativeElement.alt = hero;
     }, 1500);
   }
