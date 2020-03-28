@@ -1,5 +1,8 @@
 <header class="typewriter">
-  <h1>The <span>MARVEL</span> Comics API</h1>
+  <div class="header-content">
+    <fa-icon id="back" title="homepage" [icon]="arrowLeft" [routerLink]="['/homepage']" routerLinkActive="router-link-active" ></fa-icon>
+    <h1>The <span>MARVEL</span> Comics API</h1>
+  </div>
 
   <div id="search-content">
     <form [formGroup]="searchForm" (ngSubmit)="getCharacters()">

@@ -39,7 +39,22 @@ export class LoginComponent implements OnInit, AfterViewInit {
     "ultron",
     "night_crawer",
     "rogue",
-    "phonix"
+    "phonix",
+    "warlock",
+    "gleen_stacy",
+    "storm",
+    "drax",
+    "spider_woman",
+    "spider_girl",
+    "miles_moralles",
+    "warlock_2",
+    "rocket",
+    "rocket_groot",
+    "venom",
+    "carnage",
+    "carnage_venom",
+    "hulk_burster",
+    "galactus"
   ];
 
   constructor() {}

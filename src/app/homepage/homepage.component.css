@@ -1,0 +1,95 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 40px;
+  height: 500px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  list-style: none;
+}
+
+ul .menu-item {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ul .menu-item:hover {
+  color: rgb(236, 29, 36);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.homepage img {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 6px 7px 11px 1px rgba(0,0,0,0.58);
+}
+
+.marvel-api-infos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+h1#description {
+  font-size: 24px;
+  text-align: justify;
+}
+
+h1#description span {
+  background: rgb(236, 29, 36);
+  padding: 0 5px;
+  color: white;
+}
+
+.api-references {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.api-references-links {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.api-references-links:last-child {
+  margin-right: 0;
+}
+
+.api-references-links .links {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.api-references-links .links:hover {
+  text-decoration: underline;
+  color: rgb(236, 29, 36);
+}
+
+.api-references-links .link-description {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: justify;
+}

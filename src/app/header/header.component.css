@@ -18,6 +18,26 @@ header h1 span {
   color: white
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header-content #back {
+  font-size: 32px;
+  padding: 10px;
+  color: rgb(236, 29, 36);
+  transition: opacity 0.2s;
+  outline: 0;
+}
+
+.header-content #back:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transform: translateX(-5px);
+}
+
 #search-content {
   display: flex;
   justify-content: center;
@@ -48,10 +68,13 @@ input[type=text] {
 
   border-radius: 18px;
   margin-left: 10px;
+  transition: opacity 0.2s;
 }
 
 #search-content button:hover {
   cursor: pointer;
+  opacity: 0.6;
+  font-weight: bolder;
 }
 
 /* DEMO-SPECIFIC STYLES */
@@ -70,7 +93,7 @@ input[type=text] {
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 65% }
+  to { width: 60% }
 }
 
 /* The typewriter cursor effect */

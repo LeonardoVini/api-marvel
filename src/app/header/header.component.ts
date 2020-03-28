@@ -1,5 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 import { MarvelAPIService } from './service/marvel-api.service';
 
@@ -9,6 +10,8 @@ import { MarvelAPIService } from './service/marvel-api.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+  protected arrowLeft = faArrowLeft;
 
   @Output() private charactersData = new EventEmitter<any[]>();
 

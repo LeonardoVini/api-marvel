@@ -1,0 +1,8 @@
+<div class="content">
+  <api-header (charactersData)="setCharacters($event)"></api-header>
+
+  <main class="main">
+    <api-character-list [characters]="characters" *ngIf="characters.length"></api-character-list>
+    <api-error-page *ngIf="!characters.length"></api-error-page>
+  </main>
+</div>
