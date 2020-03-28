@@ -11,7 +11,7 @@ import { MarvelAPIService } from './service/marvel-api.service';
 })
 export class HeaderComponent implements OnInit {
 
-  protected arrowLeft = faArrowLeft;
+  public arrowLeft = faArrowLeft;
 
   @Output() private charactersData = new EventEmitter<any[]>();
 
