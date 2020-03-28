@@ -1,0 +1,79 @@
+<div class="content">
+  <api-header (charactersData)="setCharacters($event)"></api-header>
+
+  <main class="main">
+    <super-hero-list [characters]="characters"></super-hero-list>
+
+    <div class="no-heros" *ngIf="!characters?.length">
+      <!-- <div class="error-content" *ngIf="errorPage">
+        <h3>
+          There isn't a hero called <span>{{ searchFor }}</span
+          >. Try one of these please:
+        </h3>
+        <ul class="list-characters">
+          <li class="list-item" (click)="getCharacters('Spider-man')">
+            Spider-man
+          </li>
+          <li class="list-item" (click)="getCharacters('Hulk')">Hulk</li>
+          <li class="list-item" (click)="getCharacters('Thor')">Thor</li>
+          <li class="list-item" (click)="getCharacters('Iron Man')">
+            Iron Man
+          </li>
+          <li class="list-item" (click)="getCharacters('Captain America')">
+            Captain America
+          </li>
+        </ul>
+      </div> -->
+
+      <img src="http://reservacinefila.com.br/wp-content/uploads/2019/04/stanlee-howtodraw-cover-frontpage-700x341.jpg" alt="Stan Lee" />
+
+      <div class="marvel-api-infos">
+        <h1 id="description">
+          The <span>MARVEL</span> Comics API is a tool to help developers
+          everywhere create amazing, uncanny and incredible web sites and
+          applications using data from the 70-plus years of the Marvel age of
+          comics.
+        </h1>
+
+        <div class="api-references">
+          <div class="api-references-links">
+            <a
+              href="https://developer.marvel.com/documentation/getting_started"
+              target="__blank"
+              class="links"
+              >API Documentation</a
+            >
+            <p class="link-description ">
+              Read the documentation and rules of the road for the Marvel Comics
+              API.
+            </p>
+          </div>
+
+          <div class="api-references-links">
+            <a
+              href="https://developer.marvel.com/docs"
+              target="__blank"
+              class="links"
+              >Test Calls</a
+            >
+            <p class="link-description">
+              Use the interactive test page to explore and test API calls.
+            </p>
+          </div>
+
+          <div class="api-references-links">
+            <a
+              href="https://developer.marvel.com/account"
+              target="__blank"
+              class="links"
+              >My Developer Account</a
+            >
+            <p class="link-description">
+              Check your account status and manage your API keys and referrers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

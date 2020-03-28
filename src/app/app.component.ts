@@ -7,14 +7,8 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AppComponent implements OnInit {
 
-  public characters: any[]
-
   constructor() {}
 
   ngOnInit(): void {
-  }
-
-  public setCharacters(event): void {
-    this.characters = event
   }
 }

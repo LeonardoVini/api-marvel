@@ -7,8 +7,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HeaderComponent } from './header/header.component';
-import { SuperHeroListComponent } from './super-hero-list/super-hero-list.component';
-import { SuperHeroComponent } from './super-hero-list/super-hero/super-hero.component';
+import { LoginComponent } from './login/login.component';
+import { HeroComponent } from './hero/hero.component';
+import { RouterModule } from '@angular/router';
+import { SuperHeroComponent } from './hero/super-hero-list/super-hero/super-hero.component';
+import { SuperHeroListComponent } from './hero/super-hero-list/super-hero-list.component';
 
 
 @NgModule({
@@ -16,13 +19,16 @@ import { SuperHeroComponent } from './super-hero-list/super-hero/super-hero.comp
     AppComponent,
     HeaderComponent,
     SuperHeroListComponent,
-    SuperHeroComponent
+    SuperHeroComponent,
+    LoginComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
